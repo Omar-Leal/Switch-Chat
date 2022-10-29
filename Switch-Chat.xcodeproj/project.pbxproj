@@ -81,9 +81,8 @@
 		E7EE90AE290C8EF80073D7F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7EE90C0290CA2CA0073D7F8 /* Login */,
 				E7456841290C7F7D00FDBC70 /* ConversationsVC.swift */,
-				E7EE90B4290C9E110073D7F8 /* LoginVC.swift */,
-				E7EE90B6290C9E4C0073D7F8 /* RegisterVC.swift */,
 				E7EE90B8290C9EA10073D7F8 /* PhotoViewerVC.swift */,
 				E7EE90BA290C9EC10073D7F8 /* VideoPlayerVC.swift */,
 				E7EE90BC290C9EF30073D7F8 /* NewConversationVC.swift */,
@@ -131,6 +130,15 @@
 				E7456848290C7F7E00FDBC70 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E7EE90C0290CA2CA0073D7F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E7EE90B4290C9E110073D7F8 /* LoginVC.swift */,
+				E7EE90B6290C9E4C0073D7F8 /* RegisterVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

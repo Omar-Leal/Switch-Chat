@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterVC.swift
 //  Switch-Chat
 //
 //  Created by Omar Leal on 10/28/22.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .orange
         // Do any additional setup after loading the view.
     }
     
