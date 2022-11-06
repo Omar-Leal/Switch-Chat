@@ -11,23 +11,23 @@ class ConversationsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .lightGray
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         /*  With userDefautl we check if the user is logged in or is not  */
-        let userIsLogged = UserDefaults.standard.bool(forKey: "userIsLogged")
+        let userAlreadyLogged = UserDefaults.standard.bool(forKey: "user_Already_Logged")
         
         
         /*  Checking if the user is logged inf  */
-        if !userIsLogged {
+        if !userAlreadyLogged {
             /* if it's not logged  so we bring the Login ScreenController */
             
-            let loginVC = LoginViewController()
+            let loginVC = LoginVC()
             let navigation = UINavigationController(rootViewController: loginVC)
-            navigation.modalPresentationStyle = .fullScreen
+            navigation.modalPresentationStyle = .popover
             present(navigation, animated: true)
         }
     }
