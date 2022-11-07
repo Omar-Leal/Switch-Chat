@@ -122,6 +122,9 @@ class LoginVC: UIViewController {
     }
 
     @objc private func tapLoginButton() {
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        
          guard let email = emailField.text, let pass = passwordField.text,
                email.isEmpty, !pass.isEmpty, pass.count > 6 else {
          alertUserLoginError()
@@ -154,7 +157,7 @@ class LoginVC: UIViewController {
             emailField.topAnchor.constraint(equalTo: loginImage.bottomAnchor, constant: 32),
             emailField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
             emailField.heightAnchor.constraint(equalToConstant: 46),
-            emailField.widthAnchor.constraint(equalToConstant: 327)
+           // emailField.widthAnchor.constraint(equalToConstant: 327)
         ]
         
         let passwordInput = [
@@ -162,7 +165,7 @@ class LoginVC: UIViewController {
             passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 12),
             passwordField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
             passwordField.heightAnchor.constraint(equalToConstant: 46),
-            passwordField.widthAnchor.constraint(equalToConstant:  scrollView.frame.width)
+            //passwordField.widthAnchor.constraint(equalToConstant:  scrollView.frame.width)
         ]
         
         let logInButton = [
@@ -185,7 +188,7 @@ class LoginVC: UIViewController {
   
 }
 
-
+//
 extension LoginVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailField {
